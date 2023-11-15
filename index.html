@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="src/style.css" />
-    <title>My Weather App 2.0</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <title>Ohara Koson Weather App</title>
 </head>
 
 <body>
@@ -25,34 +25,52 @@
 
         <main>
             <div class="weather-app">
-                <div class="weather-app-temperature-container">
-                    <span class="weather-app-icon">🌤️</span>
-                </div>
+                <div class="weather-app-icon" id="icon"></div>
+                <div class="weather-app-city" id="city"></div>
                 <div>
-                    <span class="weather-app-temperature">12</span><span class="weather-app-unit">°C</span>
+                    <span class="weather-app-temperature" id="temperature"></span><span
+                        class="weather-app-unit">°C</span>
                 </div>
-                <div class="weather-app-city" id="city">
-                    Kuala Lumpur
-                </div>
+                <div class="weather-app-description" id="description"></div>
+                <div class="weather-app-time" id="time"></div>
                 <div class="weather-app-details">
-                    Tuesday 14:49 <br />
-                    scattered clouds <br />
-                    Humidity: <strong>66%</strong> <br />
-                    Wind: <strong>3.13 km/h</strong>
+                    <div class="row">
+                        <div class="col">
+                            Feels like:
+                        </div>
+                        <div class="col">
+                            <strong id="feels-like"></strong>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            Humidity:
+                        </div>
+                        <div class="col">
+                            <strong id="humidity"></strong>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            Wind:
+                        </div>
+                        <div class="col">
+                            <strong id="wind-speed"></strong>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <div class="row weather-forecast" id="forecast"></div>
         </main>
 
         <footer>
-            This project was coded by
-            <a href="https://github.com/katmohd" target="_blank">Kat</a>
-            and is on
-            <a href="https://katmohd.github.io/My-Weather-App-2.0/" target="_blank">GitHub</a>
-            and hosted on
-            <a href="https://resilient-pastelito-309b3f.netlify.app/" target="_blank">Netlify</a>
+            Ohara Koson Weather App coded by
+            <a href="https://github.com/katmohd" target="_blank">Kat</a>. Open sourced on
+            <a href="https://github.com/katmohd/My-Weather-App-2.0" target="_blank">GitHub</a>, hosted on
+            <a href="https://resilient-pastelito-309b3f.netlify.app/" target="_blank">Netlify</a>.
         </footer>
     </div>
-    <script src="src/index.js"></script>
+    <script type="module" src="src/index.js"></script>
 </body>
 
 </html>
