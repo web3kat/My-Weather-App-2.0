@@ -1,7 +1,7 @@
 body {
     align-items: center;
     background: #f8f5e4;
-    color: #000;
+    color: #f8f5e4;
     display: flex;
     font-family: "Outfit", sans-serif;
     justify-content: center;
@@ -11,7 +11,7 @@ body {
 }
 
 a {
-    color: rgba(0, 0, 0, 0.75);
+    color: rgba(248, 245, 228, 0.9);
 }
 
 a:hover {
@@ -27,9 +27,9 @@ a:hover {
     border-radius: 16px;
     box-shadow: 0 30px 50px rgba(0, 0, 0, 0.08);
     margin: 0 auto;
-    max-width: 600px;
+    width: 600px;
     overflow: auto;
-    padding: 20px;
+    padding: 0;
     transition: all 200ms ease-in-out;
 }
 
@@ -41,9 +41,9 @@ a:hover {
     border-radius: 16px;
     box-shadow: 0 30px 50px rgba(0, 0, 0, 0.08);
     margin: 0 auto;
-    max-width: 600px;
+    width: 600px;
     overflow: auto;
-    padding: 20px;
+    padding: 0;
     transition: all 200ms ease-in-out;
 }
 
@@ -55,9 +55,9 @@ a:hover {
     border-radius: 16px;
     box-shadow: 0 30px 50px rgba(0, 0, 0, 0.08);
     margin: 0 auto;
-    max-width: 600px;
+    width: 600px;
     overflow: auto;
-    padding: 20px;
+    padding: 0;
     transition: all 200ms ease-in-out;
 }
 
@@ -69,9 +69,9 @@ a:hover {
     border-radius: 16px;
     box-shadow: 0 30px 50px rgba(0, 0, 0, 0.08);
     margin: 0 auto;
-    max-width: 600px;
+    width: 600px;
     overflow: auto;
-    padding: 20px;
+    padding: 0;
     transition: all 200ms ease-in-out;
 }
 
@@ -83,9 +83,9 @@ a:hover {
     border-radius: 16px;
     box-shadow: 0 30px 50px rgba(0, 0, 0, 0.08);
     margin: 0 auto;
-    max-width: 600px;
+    width: 600px;
     overflow: auto;
-    padding: 20px;
+    padding: 0;
     transition: all 200ms ease-in-out;
 }
 
@@ -97,9 +97,9 @@ a:hover {
     border-radius: 16px;
     box-shadow: 0 30px 50px rgba(0, 0, 0, 0.08);
     margin: 0 auto;
-    max-width: 600px;
+    width: 600px;
     overflow: auto;
-    padding: 20px;
+    padding: 0;
     transition: all 200ms ease-in-out;
 }
 
@@ -111,14 +111,14 @@ a:hover {
     border-radius: 16px;
     box-shadow: 0 30px 50px rgba(0, 0, 0, 0.08);
     margin: 0 auto;
-    max-width: 600px;
+    width: 600px;
     overflow: auto;
-    padding: 20px;
+    padding: 0;
     transition: all 200ms ease-in-out;
 }
 
 header {
-    background: rgba(248, 245, 228, 0.75);
+    background: rgba(0, 0, 0, 0.5);
     border-radius: 10px 10px 0 0;
     padding: 20px 20px 0 20px;
 }
@@ -129,10 +129,10 @@ header {
 }
 
 .search-form-input {
-    background: rgba(248, 245, 228, 0.25);
-    border: 1px solid #000;
+    background: rgba(0, 0, 0, 0.25);
+    border: 1px solid #f8f5e4;
     border-radius: 5px 0 0 5px;
-    color: rgba(0, 0, 0, 0.25);
+    color: #f8f5e4;
     font-family: "Outfit", sans-serif;
     font-size: 16px;
     padding: 10px;
@@ -140,10 +140,10 @@ header {
 }
 
 .search-form-button {
-    background: #000;
+    background: rgba(248, 245, 228, 0.75);
     border: none;
     border-radius: 0 5px 5px 0;
-    color: #f8f5e4;
+    color: #000;
     cursor: pointer;
     font-family: "Outfit", sans-serif;
     font-size: 16px;
@@ -151,19 +151,21 @@ header {
 }
 
 main {
-    background: rgba(248, 245, 228, 0.75);
+    background: rgba(0, 0, 0, 0.5);
     padding: 10px 0;
 }
 
 .weather-app {
     align-items: center;
     justify-content: center;
+    margin-top: 50px;
 }
 
 .weather-app-icon {
     display: block;
+    filter: brightness(0) saturate(100%) invert(88%) sepia(25%) saturate(272%) hue-rotate(329deg) brightness(111%) contrast(94%);
     line-height: 1;
-    margin: 0 auto;
+    margin: auto;
     padding: 0 0 10px 0;
 }
 
@@ -196,17 +198,17 @@ main {
 .weather-app-time {
     font-size: 25px;
     font-weight: bold;
-    padding: 15px 0;
+    margin-top: 25px;
 }
 
 .weather-app-details {
     font-size: 20px;
     line-height: 1.25;
-    padding: 0 0 10px 0;
+    margin-top: 25px;
 }
 
 .weather-app-details strong {
-    color: rgba(0, 0, 0, 0.75);
+    color: #f8f5e4;
 }
 
 .weather-app-details .row {
@@ -221,11 +223,12 @@ main {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
+    margin-top: 50px;
     padding: 5px 20px;
 }
 
 .weather-forecast-date {
-    color: rgba(0, 0, 0, 0.75);
+    color: #f8f5e4;
     font-size: 16px;
     padding: 0 0 5px 0;
 }
@@ -235,13 +238,13 @@ main {
 }
 
 .weather-forecast-temperature-min {
-    color: rgba(0, 0, 0, 0.75);
+    color: #f8f5e4;
 }
 
 footer {
-    background: rgba(248, 245, 228, 0.75);
+    background: rgba(0, 0, 0, 0.5);
     border-radius: 0 0 10px 10px;
-    border-top: 1px solid #000;
+    border-top: 1px solid #f8f5e4;
     font-size: 12px;
     padding: 10px;
     text-align: center;
@@ -251,8 +254,6 @@ footer {
     .container {
         background-size: cover;
         border-radius: 0;
-        margin: 0;
-        padding: 0;
     }
 
     header {
@@ -261,12 +262,27 @@ footer {
     }
 
     main {
-        height: 71vh;
-        padding-top: 10vh;
+        height: 80vh;
+    }
+
+    .weather-app {
+        margin-top: 20px;
+    }
+
+    .weather-app-time {
+        margin-top: 20px;
+    }
+
+    .weather-app-details {
+        margin-top: 20px;
     }
 
     .weather-app-details .row {
         padding: 0 20px;
+    }
+
+    .weather-forecast {
+        margin-top: 175px;
     }
 
     footer {

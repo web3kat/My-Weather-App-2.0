@@ -31,7 +31,7 @@ function getForecast(city) {
 }
 
 function refreshWeather(response) {
-  let iconElement = document.querySelector("#icon");
+  //let iconElement = document.querySelector("#icon");
   let cityElement = document.querySelector("#city");
   let temperatureElement = document.querySelector("#temperature");
   let temperature = response.data.temperature.current;
@@ -42,7 +42,7 @@ function refreshWeather(response) {
   let humidityElement = document.querySelector("#humidity");
   let windSpeedElement = document.querySelector("#wind-speed");
 
-  iconElement.innerHTML = `<img src="./icons/${response.data.condition.icon}.svg" class="weather-app-icon" width="100px" />`;
+  //iconElement.innerHTML = `<img src="./icons/${response.data.condition.icon}.svg" class="weather-app-icon" width="100px" />`;
   cityElement.innerHTML = response.data.city;
   temperatureElement.innerHTML = Math.round(temperature);
   descriptionElement.innerHTML = response.data.condition.description;
