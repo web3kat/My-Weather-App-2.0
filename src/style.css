@@ -220,11 +220,13 @@ main {
 
 .weather-forecast {
     display: flex;
-    flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-between;
     margin-top: 75px;
     padding: 5px 20px;
+}
+
+.weather-forecast-day {
+    flex: 1;
 }
 
 .weather-forecast-date {
