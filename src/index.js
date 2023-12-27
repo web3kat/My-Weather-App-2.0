@@ -28,6 +28,13 @@ function displayForecast(response) {
   forecastElement.innerHTML = forecastHtml;
 }
 
+function formatDay(timestamp) {
+  let date = new Date(timestamp * 1000);
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+  return days[date.getDay()];
+}
+
 function getForecast(city) {
   let apiUrlForecast = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${WEATHER_API_KEY}&units=metric`;
   axios(apiUrlForecast).then(displayForecast);
@@ -174,13 +181,6 @@ function formatDate(date) {
   let day = days[date.getDay()];
 
   return `${day} ${hours}:${minutes}`;
-}
-
-function formatDay(timestamp) {
-  let date = new Date(timestamp * 1000);
-  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
-
-  return days[date.getDay()];
 }
 
 function searchCity(city) {
